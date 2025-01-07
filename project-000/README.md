@@ -2,9 +2,9 @@
 
 This project is a simple portfolio website built with Node.js and Express. It demonstrates basic setup, routing, and serves static files.
 
-### functionality
+### Functionality
 
-- **Server Setup (`server.js`)**:
+- **Server Setup (`src/index.mjs`)**:
 
   - Initializes Express server.
   - Listens on a specified port (e.g., `3000`).
@@ -42,17 +42,18 @@ This project is a simple portfolio website built with Node.js and Express. It de
 
 - Initialize a new Node.js project using `npm init`.
 - Install necessary dependencies (`express`, `nodemon`).
-- Set up a basic `server.js` file to run the server.
+- Set up a basic `src/index.mjs` file to run the server.
 
 ### 2. **Create Directory Structure**
 
 - Create a `public` directory for static assets (CSS, images, etc.).
 - Create a `views` directory for HTML or template files (if using templating engine).
 - Create a `routes` directory for handling API routes.
+- Place `index.mjs` in the `src` folder.
 
 ### 3. **Setup Basic Express Server**
 
-- Set up an Express server in `server.js`.
+- Set up an Express server in `src/index.mjs`.
 - Make sure the server listens on a specified port (e.g., `3000`).
 - Use `nodemon` for auto-reloading the server during development.
 
@@ -133,7 +134,3 @@ This project is a simple portfolio website built with Node.js and Express. It de
 - Ensure smooth user experience and quick loading of pages.
 
 ---
-
-### Deployment
-
-Once all tasks are completed and tested, you can deploy the website to platforms like [Heroku](https://heroku.com) or [Netlify](https://netlify.com) for hosting.
