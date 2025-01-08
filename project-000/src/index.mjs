@@ -1,20 +1,24 @@
 import express from "express";
+import path from "path";
+import homeRoute from "./routes/homeRoute.mjs";
+import aboutRoute from "./routes/aboutRoute.mjs";
+import contactRoute from "./routes/contactRoute.mjs";
+import projectsRoute from "./routes/projectsRoute.mjs";
 
 const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send("HomeRoute");
-});
-app.get("/about", (req, res) => {
-  res.send("About");
-});
-app.get("/projects", (req, res) => {
-  res.send("Projects");
-});
-app.get("/contact", (req, res) => {
-  res.send("Contact");
+app.set("view engine", "ejs");
+app.set("views", path.join(process.cwd(), "views"));
+
+app.use("/", homeRoute);
+app.use("/about", aboutRoute);
+app.use("/contact", contactRoute);
+app.use("/projects", projectsRoute);
+
+app.use((req, res) => {
+  res.status(404).send("Invalid Request");
 });
 
 app.listen(PORT, () => {
