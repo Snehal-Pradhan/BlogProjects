@@ -1,0 +1,20 @@
+{
+  "name": "project-001",
+  "version": "1.0.0",
+  "description": "This project demonstrates how to create a request logging middleware in Node.js with Express. The middleware logs request details for every incoming API request.",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.mjs",
+    "start:dev": "nodemon ./src/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
