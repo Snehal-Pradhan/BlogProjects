@@ -1,0 +1,20 @@
+{
+  "name": "project-002",
+  "version": "1.0.0",
+  "description": "This project demonstrates the creation of a RESTful API for managing a bookstore. The API supports operations such as adding, updating, retrieving, and deleting books, using the `fs` module to simulate a database.",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.mjs",
+    "start:dev": "nodemon ./src/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
